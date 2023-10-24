@@ -21,6 +21,8 @@ function handleEmptyRouteFn(req, res) {
 
 function handleSum(req, res) {
     console.log(req.query);
+    // send is a method of res(response) used to send
+    // info from server to browser.
     res.send(`sum of first ${req.query.number} numbers is ${calculateSum(req.query.number)}`);
 }
 
